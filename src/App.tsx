@@ -5,6 +5,7 @@ import { AuthProvider } from './context/AuthProvider';
 import './App.css'
 
 import { LoginPage } from './pages/LoginPage';
+import { SignupPage } from './pages/SignupPage';
 
 const App: React.FC = () => (
   <AuthProvider>
@@ -12,6 +13,8 @@ const App: React.FC = () => (
       <Routes>
         {/* Public Routes */}
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignupPage />} />
+
 
         {/* Protected Routes */}
         {/* TODO: Wrap protected routes with ProtectedRoute in the future */}
